@@ -177,10 +177,11 @@ ul.thin li {
     padding: 0;
 }
 #header {
-	background: url(https://i.ibb.co/Xx8wL4xk/BJ-Darker2-copy.gif) no-repeat top center;
+	background: url(https://i.ibb.co/C3dMBcCb/BJ-Darker2-Smol.gif) no-repeat top center;
    /background-color: #0a0a0c;
     width: 100%;
     padding: 0;
+	height: 160px;
 }
 #content {
     margin: auto;
@@ -207,7 +208,7 @@ ul.thin li {
 }
 #logo {
     width: 100%;
-    height: 290px; /*altura body*/
+    height: 160px; /*altura body*/
     margin: 0px auto 0 auto;
 }
 #logo a {
@@ -224,7 +225,7 @@ ul.thin li {
 }
 #menu {
     position: absolute;
-    top: 295px; /*altura menu*/
+    top: 160px; /*altura menu*/
     width: 100%;
     text-align: center;
     font-size: 10pt;
