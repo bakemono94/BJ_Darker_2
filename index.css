@@ -53,6 +53,9 @@ h2 {
 #content .thin h2 {
 	height: 90px;
 }
+#content .thin form {
+	margin-top: 80px;
+}
 #content .thin center img {
 	height: 150px;
 	display: grid;
