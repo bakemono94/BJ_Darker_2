@@ -36,6 +36,8 @@ a.similar_artist:hover {
 h1, h2, h3, h4 {
     margin: 5px 0;
     font-weight: 700;
+	height: 80px;
+	align-content: end;
 }
 h2 {
     text-align: center;
