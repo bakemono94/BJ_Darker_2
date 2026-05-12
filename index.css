@@ -44,6 +44,9 @@ h2 {
     font-size: 12pt;
     color: #f0f0f0;
 }
+#content .thin h2 {
+	height: 90px;
+}
 h4 {
     font-size: 8pt;
 }
