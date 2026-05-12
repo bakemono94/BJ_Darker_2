@@ -1506,7 +1506,7 @@ ul.bjqs-controls.v-centered li.bjqs-next a {
     border-bottom-color: #494649;
     border-right-color: #494649;
     cursor: pointer;
-    background: linear-gradient(180deg, #161618 0, #38383f 1px, #2c2c36 2px, #1e1e23);
+    background: linear-gradient(180deg, #1f1f25 0, #202025 1px, #1f1f25 2px, #202025);
     vertical-align: middle;
     text-align: center;
     padding: 6px 8px 6px 8px;
@@ -1525,7 +1525,7 @@ ul.bjqs-controls.v-centered li.bjqs-prev a {
     border-bottom-color: #494649;
     border-right-color: #494649;
     cursor: pointer;
-    background: linear-gradient(180deg, #161618 0, #38383f 1px, #2c2c36 2px, #1e1e23);
+    background: linear-gradient(180deg, #1f1f25 0, #202025 1px, #1f1f25 2px, #202025);
     vertical-align: middle;
     text-align: center;
     padding: 6px 8px 6px 8px;
