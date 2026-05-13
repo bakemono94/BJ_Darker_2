@@ -89,6 +89,9 @@ ul {
 #content .thin .header h3#general {
 	margin-bottom: 20px;
 }
+h2 img#banner {
+	margin-top: 0px !important;
+}
 input {
     padding: 2px 3px;
     background: #1a1a1e;
