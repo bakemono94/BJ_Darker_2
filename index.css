@@ -86,6 +86,9 @@ li {
 ul {
   padding-left: 5px;
 }
+#content .thin .header h3#general {
+	margin-bottom: 20px;
+}
 input {
     padding: 2px 3px;
     background: #1a1a1e;
