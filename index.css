@@ -1854,6 +1854,9 @@ dialog {
 .thin {
 	margin-top: 5px;
 }
+form#userform {
+	margin-top: 0px !important;
+}
 form#chatForm {
 	margin-top: 0px !important;
 }
