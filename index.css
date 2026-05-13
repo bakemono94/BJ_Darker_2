@@ -1848,6 +1848,9 @@ dialog {
   text-align: left;
   margin-right: 10px;
 }
+form#chatForm {
+	margin-top: 0px !important;
+}
 /* Limita as linhas da tabela forum_index a 30px.
    O seletor cobre tanto <table class="forum_index"> quanto <table id="forum_index">. */
 .forum_index tr,
