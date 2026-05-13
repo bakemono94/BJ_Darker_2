@@ -518,8 +518,7 @@ input.hidden {
     font-weight: 700;
 }
 div.linkbox {
-	display: none;
-    text-align: center;
+	text-align: center;
     padding: 5px;
     margin-bottom: 50px;
 }
