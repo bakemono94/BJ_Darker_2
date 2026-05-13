@@ -65,6 +65,9 @@ h2 {
 .box.pad h3 {
 	margin-bottom: 20px;
 }
+#content .thin .header + h3 {
+	margin-bottom: 20px;
+}
 #content .thin center img {
 	height: 150px;
 	display: grid;
