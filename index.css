@@ -520,6 +520,7 @@ input.hidden {
 div.linkbox {
     text-align: center;
     padding: 5px;
+    margin-bottom: 50px;
 }
 .center {
     text-align: center;
