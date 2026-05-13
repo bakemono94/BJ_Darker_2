@@ -74,6 +74,9 @@ h2 {
 	align-content: end;
 	margin-top: 60px;
 }
+.box .body form {
+	margin-top: 0px !important;
+}
 h4 {
     font-size: 8pt;
 }
