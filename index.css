@@ -77,17 +77,6 @@ h3#dnu_header {
 	align-content: end;
 	margin-top: 60px;
 }
-.forum_index tr {
-    height: 30px;
-}
-
-.forum_index td {
-    height: 30px;
-    padding-top: 0;
-    padding-bottom: 0;
-    overflow: hidden;
-    vertical-align: middle;
-}
 .box .body form {
 	margin-top: 0px !important;
 }
@@ -1858,4 +1847,49 @@ dialog {
   width: max-content;
   text-align: left;
   margin-right: 10px;
+}
+/* Limita as linhas da tabela forum_index a 30px.
+   O seletor cobre tanto <table class="forum_index"> quanto <table id="forum_index">. */
+.forum_index tr,
+#forum_index tr {
+    height: 30px !important;
+    max-height: 30px !important;
+}
+
+/* Em tabelas, quem define a altura real da linha sao as celulas.
+   Por isso o limite tambem precisa ser aplicado em td/th, com padding vertical zerado. */
+.forum_index td,
+.forum_index th,
+#forum_index td,
+#forum_index th {
+    height: 30px !important;
+    max-height: 30px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: 30px !important;
+    overflow: hidden !important;
+    vertical-align: middle !important;
+    white-space: nowrap;
+}
+
+/* Conteudos internos grandes podem forcar a linha a crescer.
+   Este bloco corta wrappers, links, spans e outros elementos diretos dentro da celula. */
+.forum_index td > *,
+.forum_index th > *,
+#forum_index td > *,
+#forum_index th > * {
+    max-height: 30px !important;
+    line-height: 30px !important;
+    overflow: hidden !important;
+    vertical-align: middle !important;
+}
+
+/* Imagens/avatares/icones maiores que 30px tambem aumentam a linha se nao forem limitados. */
+.forum_index td img,
+.forum_index th img,
+#forum_index td img,
+#forum_index th img {
+    max-height: 30px !important;
+    width: auto;
+    vertical-align: middle;
 }
