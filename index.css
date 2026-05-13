@@ -1848,6 +1848,9 @@ dialog {
   text-align: left;
   margin-right: 10px;
 }
+#compose + br {
+	display: none;
+}
 form#chatForm {
 	margin-top: 0px !important;
 }
