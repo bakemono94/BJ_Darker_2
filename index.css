@@ -92,6 +92,9 @@ ul {
 h2 img#banner {
 	margin-top: 0px !important;
 }
+#content .thin center form {
+	margin-top: 0px;
+}
 input {
     padding: 2px 3px;
     background: #1a1a1e;
