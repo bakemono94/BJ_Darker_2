@@ -1851,6 +1851,9 @@ dialog {
 #compose + br {
 	display: none;
 }
+.thin {
+	margin-top: 5px;
+}
 form#chatForm {
 	margin-top: 0px !important;
 }
