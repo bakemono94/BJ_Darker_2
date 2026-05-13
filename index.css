@@ -53,6 +53,12 @@ h2 {
 #content .thin h2 {
 	height: 30px;
 }
+.search_form{
+	margin-top: 0px !important;
+}
+.manage_form{
+	margin-top: 0px !important;
+}
 #content .thin form {
 	margin-top: 80px;
 }
