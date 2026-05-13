@@ -461,6 +461,7 @@ ul.thin li {
     color: #c8c8d8;
 }
 .alertbar {
+	display: none;
     background-color: rgb(33, 33, 37);
     border: 1px solid #38383f;
     text-align: center;
