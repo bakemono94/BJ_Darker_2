@@ -520,7 +520,7 @@ input.hidden {
 div.linkbox {
 	text-align: center;
     padding: 5px;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
 }
 #content .thin h3 {
 	height: 0px;
