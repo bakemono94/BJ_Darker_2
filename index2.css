@@ -1930,3 +1930,22 @@ input#btnSendStaff {
 span.edit_torrent.float_right {
 	display: none;
 }
+a[title="Editar"]{
+	display: none;
+}
+blockquote {
+	display: none;
+}
+a.brackets[href*="masspm"] {
+	display: none;
+}
+a.brackets[onclick^="show_peers"] {
+	display: none;
+}
+a.brackets[onclick^="show_downloads"] {
+	display: none;
+}
+a.brackets[onclick^="show_snatches"] {
+	display: none;
+}
+	
