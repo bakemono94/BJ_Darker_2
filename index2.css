@@ -1948,4 +1948,9 @@ a.brackets[onclick^="show_downloads"] {
 a.brackets[onclick^="show_snatches"] {
 	display: none;
 }
-	
+a.brackets[onclick^="Edit_Form"] {
+	display: none;
+}
+a.brackets[onclick^="Delete"] {
+	display: none;
+}
