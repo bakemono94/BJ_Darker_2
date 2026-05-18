@@ -1973,3 +1973,10 @@ span.remove.remove_tag{
     content: "Todos";
     font-size: 12px; /* Ajuste para o tamanho original da fonte do site */
 }
+li#stats_leeching span.stat.bjtooltip {
+	font-size: 0px !important;
+}
+li#stats_leeching span.stat.bjtooltip::before {
+	content: "No";
+    font-size: 12px;
+}
