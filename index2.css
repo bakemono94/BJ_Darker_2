@@ -1980,10 +1980,10 @@ li#stats_leeching span.stat.bjtooltip::before {
 	content: "No";
     font-size: 12px;
 }
-span.stat.bjtooltip::before {
+span.bjtooltip.r50::before {
 	content: "Todos";
     font-size: 12px;
 }
-span.stat.bjtooltip{
+span.bjtooltip.r50{
 	font-size: 0px !important;
 }
