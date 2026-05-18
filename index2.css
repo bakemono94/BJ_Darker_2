@@ -1954,3 +1954,9 @@ a.brackets[onclick^="Edit_Form"] {
 a.brackets[onclick^="Delete"] {
 	display: none;
 }
+input#staffbox {
+	display: none;
+}
+label[for="staffbox"] {
+	display: none;
+}
