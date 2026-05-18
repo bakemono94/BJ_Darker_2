@@ -1960,3 +1960,9 @@ input#staffbox {
 label[for="staffbox"] {
 	display: none;
 }
+.box.box_addtag{
+	display: none;
+}
+span.remove.remove_tag{
+	display: none;
+}
