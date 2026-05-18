@@ -1981,9 +1981,16 @@ li#stats_leeching span.stat.bjtooltip::before {
     font-size: 12px;
 }
 span.bjtooltip.r50::before {
-	content: "Todos";
+	content: "Infinito e Além";
     font-size: 12px;
 }
 span.bjtooltip.r50{
+	font-size: 0px !important;
+}
+span.stat.bjtooltip::before{
+	content: "Todos";
+    font-size: 12px;
+}
+span.stat.bjtooltip{
 	font-size: 0px !important;
 }
