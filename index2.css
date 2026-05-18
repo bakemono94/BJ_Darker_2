@@ -1966,10 +1966,10 @@ label[for="staffbox"] {
 span.remove.remove_tag{
 	display: none;
 }
-#span.stat.bjtooltip {
-    font-size: 0px !important;
+#stats_seeding span.stat.bjtooltip {
+    font-size: 0;
 }
-#span.stat.bjtooltip::before {
+#stats_seeding span.stat.bjtooltip::before {
     content: "Todos";
-    font-size: 13px; /* Ajuste para o tamanho original da fonte do seu site */
+    font-size: 12px; /* Ajuste para o tamanho original da fonte do site */
 }
