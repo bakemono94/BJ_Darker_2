@@ -1926,3 +1926,6 @@ form#chatForm {
 p[style*="font-size:72px"] {
 	display:none;
 }
+.sidebar .pad{
+	margin-left: 5px;
+}
