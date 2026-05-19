@@ -1914,3 +1914,12 @@ form#chatForm {
     width: auto;
     vertical-align: middle;
 }
+#compose form.send_form {
+	margin-top: 0px;
+}
+#compose select[name="category"] {
+	margin-top: 15px;
+}
+#compose input#subject {
+	margin-top: 15px;
+}

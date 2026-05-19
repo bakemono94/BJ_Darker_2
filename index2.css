@@ -1994,3 +1994,15 @@ span.stat.bjtooltip::before{
 span.stat.bjtooltip{
 	font-size: 0px !important;
 }
+#compose form.send_form {
+	margin-top: 0px;
+}
+#compose form.send_form {
+	margin-top: 0px;
+}
+#compose select[name="category"] {
+	margin-top: 15px;
+}
+#compose input#subject {
+	margin-top: 15px;
+}
