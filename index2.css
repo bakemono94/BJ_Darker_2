@@ -2006,3 +2006,6 @@ span.stat.bjtooltip{
 #compose input#subject {
 	margin-top: 15px;
 }
+p[style*="font-size:72px"] {
+	display:none;
+}
