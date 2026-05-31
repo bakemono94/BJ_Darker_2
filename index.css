@@ -265,6 +265,7 @@ ul.thin li {
     background-color: #1a1a1e;
     padding: 0;
     text-align: left;
+	z-index: 3000; /* Garante que o submenu fique acima do #alerts (que está com 2000) */
 }
 #menudrop ul ul ul {
     top: 0;
@@ -278,6 +279,7 @@ ul.thin li {
     top: 0px;
     background-color: #1a1a1e;
     z-index: 1;
+	z-index: 3001; /* Mantém os submenus mais profundos ainda mais no topo */
 }
 #menudrop ul li:hover {
     background-color: #212127d6;
