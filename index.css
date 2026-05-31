@@ -426,6 +426,7 @@ ul.thin li {
 }
 #alerts {
     position: relative;
+    z-index: 2000; /* Garante que o container fique acima do #content */
     margin-top: 32px;
     margin-bottom: -60px;
     padding: 10px 0;
