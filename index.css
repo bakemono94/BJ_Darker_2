@@ -427,14 +427,24 @@ ul.thin li {
 #searchbars ul li form {
     display: inline;
 }
-#alerts {
+/*#alerts {
     position: relative;
-    z-index: 2000; /* Garante que o container fique acima do #content */
+    z-index: 2000;
     margin-top: 32px;
     margin-bottom: -60px;
     padding: 10px 0;
     width: 100%;
     background: url(https://i.bj-share.info/ec01898d04940834f4312bb56df3f8c6.png) repeat scroll 0 #151518 !important;
+    min-width: 850px;
+}*/
+#alerts {
+    position: relative;
+    z-index: 2000;
+    margin-top: 32px;
+    margin-bottom: 0;
+    padding: 0;
+    width: 100%;
+    background: transparent !important;
     min-width: 850px;
 }
 #alerts a {
@@ -453,12 +463,20 @@ ul.thin li {
     padding: 10px;
     /*box-shadow: 0px 0px 2px #000;*/
 }
-.alertbar.blend {
+/*.alertbar.blend {
     display: block !important;
     background-color: #313031 !important;
     border: 1px solid #38383f;
     width: 410px;
     margin-top: -1px;
+}*/
+.alertbar.blend {
+    display: block !important;
+    background: transparent !important;
+    border: none !important;
+    width: max-content !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
 }
 .alertbar a {
     color: #111113;
