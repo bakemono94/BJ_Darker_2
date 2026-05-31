@@ -186,6 +186,7 @@ ul.thin li {
    /background-color: #1D1C1D;
     position: relative;
     top: 60px;
+	margin-top:10px;
 }
 #wrapper {
     width: 100%;
