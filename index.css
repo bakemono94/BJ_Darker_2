@@ -230,6 +230,7 @@ ul.thin li {
     /background-color: #18181c;
     background-color: #1a1a1e;
     box-shadow: 0 1px 3px #000;
+	z-index: 3000; /* Maior que o #alerts */
 }
 #menudrop ul {
     list-style: none;
