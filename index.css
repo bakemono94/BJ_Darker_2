@@ -457,7 +457,7 @@ ul.thin li {
     display: block !important
 	transparent !important;
 	background-color: transparent !important;
-	background-color: #313031;
+	/*background-color: #313031;*/
     /*border: 1px solid #38383f;*/
     width: 410px;
     margin-top: -1px;
