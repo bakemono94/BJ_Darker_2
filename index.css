@@ -454,11 +454,9 @@ ul.thin li {
     /*box-shadow: 0px 0px 2px #000;*/
 }
 .alertbar.blend {
-    display: block !important
-	transparent !important;
-	background-color: transparent !important;
-	/*background-color: #313031;*/
-    /*border: 1px solid #38383f;*/
+    display: block !important;
+    background-color: #313031 !important;
+    border: 1px solid #38383f;
     width: 410px;
     margin-top: -1px;
 }
