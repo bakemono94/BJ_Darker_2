@@ -453,6 +453,15 @@ ul.thin li {
     padding: 10px;
     /*box-shadow: 0px 0px 2px #000;*/
 }
+.alertbar.blend {
+    display: block !important
+	transparent !important;
+	background-color: transparent !important;
+	background-color: #313031;
+    /*border: 1px solid #38383f;*/
+    width: 410px;
+    margin-top: -1px;
+}
 .alertbar a {
     color: #111113;
     text-decoration: underline;
@@ -1933,13 +1942,4 @@ p[style*="font-size:72px"] {
 }
 table tbody tr td h3 {
 	margin-bottom: 20px;
-}
-.alertbar.blend {
-    display: block !important
-	transparent !important;
-	background-color: transparent !important;
-	background-color: #313031;
-    /*border: 1px solid #38383f;*/
-    width: 410px;
-    margin-top: -1px;
 }
