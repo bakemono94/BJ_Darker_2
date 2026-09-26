@@ -2044,9 +2044,9 @@ body.bj-sticky-menu .thin {
     padding-top: 5px;
 }
 
-/* Ajuste da barra de busca geral (Pedidos, Fórum, Logs e Usuários) para posicionar centralizada dentro da área do banner */
+/* Ajuste da barra de busca geral (Pedidos, Fórum, Logs e Usuários) para posicionar a 1px da parte de baixo do banner */
 body.bj-sticky-menu #searchbars ul {
-    margin: 50px auto;
+    margin: 58px auto;
     display: block;
 }
 
@@ -2099,8 +2099,9 @@ body.bj-sticky-menu #searchbar_torrents input#torrentssearch:focus {
 /* ----------------------------------------------------------------------
  * Coordenação de camadas (Z-Index) para evitar quebras de página
  * ---------------------------------------------------------------------- */
-/* Evita que a barra de alertas (z-index 2000 no index.css) sobreponha o menu fixo ao rolar */
+/* Reposiciona a barra de alertas (Ferramentas | Staff PM) a 5px do início da parte de baixo do banner e coordena z-index */
 body.bj-sticky-menu #alerts {
+    margin-top: 14px;
     z-index: 1000;
 }
 
