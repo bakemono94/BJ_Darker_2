@@ -452,7 +452,7 @@ ul.thin li {
     color: #c8c8d8;
 }
 .alertbar {
-	display: none;
+	display: none !important;
     background-color: rgb(33, 33, 37);
     border: 1px solid #38383f;
     text-align: center;
@@ -2120,7 +2120,15 @@ body.bj-sticky-menu #alerts {
     background: transparent !important;
 }
 
-body.bj-sticky-menu #alerts .alertbar,
+/* Oculta totalmente avisos gerais ("Tendo problemas com o Download..." e similares) */
+.alertbar:not(.blend),
+#alerts .alertbar:not(.blend),
+#alerts > *:not(.blend),
+body.bj-sticky-menu #alerts .alertbar:not(.blend) {
+    display: none !important;
+}
+
+/* Exibe exclusivamente os botões "Ferramentas" e "Staff PM" (.alertbar.blend) */
 body.bj-sticky-menu #alerts .alertbar.blend {
     display: inline-flex !important;
     align-items: center;
