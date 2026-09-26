@@ -2044,14 +2044,15 @@ body.bj-sticky-menu .thin {
     padding-top: 5px;
 }
 
-/* Ajuste da barra de busca geral para não colidir com o cabeçalho fixo */
+/* Ajuste da barra de busca geral (Pedidos, Fórum, Logs e Usuários) para posicionar centralizada dentro da área do banner */
 body.bj-sticky-menu #searchbars ul {
-    margin: 90px auto;
+    margin: 50px auto;
     display: block;
 }
 
 body.bj-sticky-menu #searchbars {
     pointer-events: none;
+    z-index: 100;
 }
 
 body.bj-sticky-menu #searchbars * {
