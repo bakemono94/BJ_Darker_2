@@ -1960,3 +1960,206 @@ p[style*="font-size:72px"] {
 table tbody tr td h3 {
 	margin-bottom: 20px;
 }
+
+/* ====================================================================
+ * CONTROLE DO MENU FIXO (STICKY NAVIGATION)
+ * Adaptado do BJ-Darkness para o BJ-Darker_2 (index.css)
+ *
+ * O menu fixo é controlado pela classe no <body>:
+ *   - Menu fixo ATIVO     → <body class="bj-sticky-menu">
+ *   - Menu fixo INATIVO   → <body> sem a classe (comportamento padrão)
+ *
+ * Compatível com o script de alternância via localStorage (botão de cadeado).
+ * Em resoluções móveis (<= 900px), o menu rola naturalmente para evitar quebras.
+ * ==================================================================== */
+
+/* ----------------------------------------------------------------------
+ * Botão / Ícone de trava do Menu Fixo (#bj-sticky-menu-lock)
+ * ---------------------------------------------------------------------- */
+#bj-sticky-menu-lock {
+    background: transparent !important;
+    border-radius: 4px !important;
+    opacity: 0.45;
+    transition: background 0.15s, transform 0.15s, opacity 0.15s, filter 0.15s;
+    filter: grayscale(100%); /* cinza quando em repouso */
+}
+
+#bj-sticky-menu-lock:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    opacity: 1;
+    filter: grayscale(0%); /* restaura cor no hover */
+}
+
+/* ----------------------------------------------------------------------
+ * Estrutura e Posicionamento Fixo (Desktop > 900px)
+ * ---------------------------------------------------------------------- */
+body.bj-sticky-menu #menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+}
+
+body.bj-sticky-menu #userinfo {
+    position: fixed;
+    top: 32px;
+    left: 0;
+    width: 100%;
+    z-index: 1999;
+}
+
+/* Efeito glassmorphism (fundo semitransparente com desfoque) nas barras fixas */
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+    body.bj-sticky-menu #menu {
+        background-color: rgba(26, 26, 30, 0.85);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+
+    body.bj-sticky-menu #userinfo {
+        background: rgba(21, 21, 24, 0.85) none !important;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+}
+
+/* Reposiciona aviso global do site para não cobrir o menu fixo */
+body.bj-sticky-menu #noteAlertMsg {
+    top: 60px;
+    z-index: 1500;
+}
+
+/* Compensação do espaço ocupado pelas duas barras fixas (32px menu + 28px userinfo = 60px) */
+body.bj-sticky-menu {
+    padding-top: 60px;
+}
+
+body.bj-sticky-menu #content {
+    top: 65px;
+}
+
+body.bj-sticky-menu .thin {
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+/* Ajuste da barra de busca geral para não colidir com o cabeçalho fixo */
+body.bj-sticky-menu #searchbars ul {
+    margin: 90px auto;
+    display: block;
+}
+
+body.bj-sticky-menu #searchbars {
+    pointer-events: none;
+}
+
+body.bj-sticky-menu #searchbars * {
+    pointer-events: auto;
+}
+
+/* Busca rápida de Torrents integrada à barra fixa superior */
+body.bj-sticky-menu #searchbar_torrents {
+    position: fixed;
+    top: 0;
+    left: max(16px, calc((100vw - 1228px) / 2 + 16px));
+    right: auto;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    z-index: 2001;
+}
+
+body.bj-sticky-menu #searchbar_torrents .search_form {
+    display: inline-flex;
+}
+
+body.bj-sticky-menu #searchbar_torrents input#torrentssearch {
+    /* Largura responsiva fluida: 115px em desktop padrão -> até 240px em telas ultrawide/4K */
+    width: clamp(115px, calc(115px + (100vw - 1200px) * 0.044), 240px);
+    background: rgba(26, 26, 30, 0.85);
+    color: var(--text-primary, #fff);
+    border: 1px solid var(--border, #38383f);
+    border-radius: 999px;
+    padding: 5px 12px;
+    font-size: inherit;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    outline: none;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease, width 0.2s ease;
+}
+
+body.bj-sticky-menu #searchbar_torrents input#torrentssearch:focus {
+    border-color: var(--border, #777);
+    box-shadow: 0 0 0 3px var(--shadow-strong, rgba(120, 120, 120, 0.4));
+}
+
+/* ----------------------------------------------------------------------
+ * Coordenação de camadas (Z-Index) para evitar quebras de página
+ * ---------------------------------------------------------------------- */
+/* Evita que a barra de alertas (z-index 2000 no index.css) sobreponha o menu fixo ao rolar */
+body.bj-sticky-menu #alerts {
+    z-index: 1000;
+}
+
+/* Garante que o fundo escuro (curtain) e modais/lightbox fiquem acima do menu fixo */
+body.bj-sticky-menu .curtain {
+    z-index: 2500;
+}
+
+body.bj-sticky-menu .lightbox {
+    z-index: 2501;
+}
+
+/* Evita que as setas de controle do carrossel (z-index 9999) atravessem o menu fixo */
+body.bj-sticky-menu ul.bjqs-controls {
+    z-index: 10;
+}
+
+/* ----------------------------------------------------------------------
+ * Responsividade Mobile (Telas <= 900px): Reverte para fluxo normal
+ * ---------------------------------------------------------------------- */
+@media (max-width: 900px) {
+    body.bj-sticky-menu #menu,
+    body.bj-sticky-menu #userinfo {
+        position: static;
+        top: auto;
+    }
+
+    body.bj-sticky-menu {
+        padding-top: 0;
+    }
+
+    body.bj-sticky-menu .thin {
+        margin: 0 auto;
+        padding-top: 0;
+    }
+
+    body.bj-sticky-menu #searchbars ul {
+        margin: 0 auto;
+    }
+
+    body.bj-sticky-menu #searchbars {
+        pointer-events: auto;
+    }
+
+    body.bj-sticky-menu #searchbar_torrents {
+        position: static;
+        top: auto;
+        left: auto;
+        height: auto;
+        display: inline;
+    }
+
+    body.bj-sticky-menu #searchbar_torrents input#torrentssearch {
+        width: auto;
+        background: none;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        box-shadow: none;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
+}
