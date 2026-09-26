@@ -2052,7 +2052,6 @@ body.bj-sticky-menu #searchbars ul {
 
 body.bj-sticky-menu #searchbars {
     pointer-events: none;
-    z-index: 100;
 }
 
 body.bj-sticky-menu #searchbars * {
@@ -2069,6 +2068,7 @@ body.bj-sticky-menu #searchbar_torrents {
     display: flex;
     align-items: center;
     z-index: 2001;
+    pointer-events: auto;
 }
 
 body.bj-sticky-menu #searchbar_torrents .search_form {
